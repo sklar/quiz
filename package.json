@@ -2,10 +2,11 @@
 	"name": "@quiz/root",
 	"private": true,
 	"version": "0.0.0",
+	"packageManager": "pnpm@9.4.0",
 	"type": "module",
 	"scripts": {
 		"build": "pnpm --parallel run build",
-		"dev:react": "pnpm --filter react run dev",
+		"dev.react": "pnpm --filter react run dev",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"type.check": "pnpm --parallel run type.check"

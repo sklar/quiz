@@ -1,0 +1,21 @@
+# Ignored files
+# @see https://git-scm.com/docs/gitignore
+
+# build
+dist
+
+# compilation
+*.tsbuildinfo
+
+# environment variables
+.env
+
+# dependencies
+node_modules
+
+# logs
+*-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

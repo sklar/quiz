@@ -4,6 +4,9 @@
 # build
 dist
 
+# ci
+.netlify
+
 # compilation
 *.tsbuildinfo
 

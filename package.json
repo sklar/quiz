@@ -4,13 +4,11 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
+		"build": "pnpm --parallel run build",
+		"dev:react": "pnpm --filter react run dev",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
-		"type.check": "tsc --noEmit"
-	},
-	"volta": {
-		"node": "22.5.1",
-		"pnpm": "9.4.0"
+		"type.check": "pnpm --parallel run type.check"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3",
@@ -18,5 +16,9 @@
 		"lightningcss": "^1.27.0",
 		"typescript": "^5.6.3",
 		"vite": "^5.4.8"
+	},
+	"volta": {
+		"node": "22.5.1",
+		"pnpm": "9.4.0"
 	}
 }

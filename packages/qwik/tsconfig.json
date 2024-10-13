@@ -1,0 +1,18 @@
+{
+	"extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "incremental": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "lib": ["ES2022", "DOM", "DOM.Iterable", "WebWorker"],
+    "outDir": "tmp",
+    "paths": {
+			"~/*": ["./src/*"]
+		},
+
+    /* linting */
+    "forceConsistentCasingInFileNames": true,
+
+  },
+	"include": ["src", "vite.config.ts"]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "@quiz/preact",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"lint.check": "pnpm biome check .",
+		"lint.write": "pnpm biome check --write .",
+		"type.check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"open-props": "^1.7.7",
+		"party-js": "^2.2.0",
+		"preact": "^10.24.2"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.9.1"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

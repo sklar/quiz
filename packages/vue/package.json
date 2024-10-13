@@ -1,0 +1,26 @@
+{
+	"name": "@quiz/vue",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview",
+		"lint.check": "pnpm biome check .",
+		"lint.write": "pnpm biome check --write .",
+		"type.check": "vue-tsc --noEmit"
+	},
+	"dependencies": {
+		"open-props": "^1.7.7",
+		"party-js": "^2.2.0",
+		"vue": "^3.5.12"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.1.4",
+		"vue-tsc": "^2.1.6"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

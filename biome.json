@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"include": ["*.svelte"],
+			"include": ["*.svelte", "*.vue"],
 			"linter": {
 				"rules": {
 					"style": {

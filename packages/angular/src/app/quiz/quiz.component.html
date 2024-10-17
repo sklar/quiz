@@ -1,0 +1,28 @@
+<section class="container">
+  <header class="header">
+    <h1>Math Quiz</h1>
+  </header>
+  <div class="body">
+    <app-quiz-question
+			*ngIf="!isSetComplete && currentQuestion"
+			[question]="currentQuestion"
+			(answer)="onAnswer($event)"
+		></app-quiz-question>
+  </div>
+  <footer>
+		<app-quiz-progress
+			*ngIf="!isSetComplete"
+			[questions]="questions"
+		></app-quiz-progress>
+		<app-quiz-result
+			*ngIf="isSetComplete"
+			[time]="timeTaken"
+			(reload)="onReload()"
+		></app-quiz-result>
+	</footer>
+	<div #confetti class="confetti"></div>
+	<div
+		class="celebrationGif"
+		[style.backgroundImage]="'url(' + celebrationGif + ')'"
+	></div>
+</section>

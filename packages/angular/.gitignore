@@ -1,0 +1,9 @@
+# Ignored files
+# @see https://git-scm.com/docs/gitignore
+
+.angular
+
+# build
+bazel-out
+dist
+out-tsc

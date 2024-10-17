@@ -1,0 +1,39 @@
+.container {
+	display: grid;
+	gap: var(--size-4);
+	inline-size: fit-content;
+	margin-block-start: 20vh;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.header {
+	inset-block-start: -200vh;
+	position: absolute;
+}
+
+.body {
+	block-size: var(--size-12);
+	display: grid;
+	place-items: center;
+}
+
+.footer {
+}
+
+/* celebration */
+.celebrationGif,
+.confetti {
+	inset: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+.celebrationGif {
+	background-position: center;
+	background-size: cover;
+	border-radius: var(--radius-3);
+	inset: 4vmax;
+	max-inline-size: 2000px;
+	margin-inline: auto;
+}

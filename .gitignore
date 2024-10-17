@@ -3,7 +3,6 @@
 
 # build
 dist
-server
 
 # ci
 .netlify
@@ -11,11 +10,11 @@ server
 # compilation
 *.tsbuildinfo
 
-# environment variables
-.env
-
 # dependencies
 node_modules
+
+# environment variables
+.env
 
 # logs
 *-debug.log*

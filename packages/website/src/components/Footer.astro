@@ -1,0 +1,67 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<footer>
+	<hr>
+
+	<ul class="links">
+		<li>
+			<a href="https://github.com/sklar/quiz">
+				<Icon name="github" />
+				Source
+			</a>
+		</li>
+	</ul>
+
+	<p class="copyright">
+		<span>Copycat © 2024 Kai Rönnquist.</span>
+		<span>All farts reversed&thinsp;<span class="farts">💨💨💨</span></span>
+	</p>
+</footer>
+
+<style>
+	footer {
+		padding-block: 32px;
+	}
+
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		justify-content: center;
+		list-style: none;
+		margin-block-end: 2lh;
+
+		a {
+			border-radius: 8px;
+			font-size: 0.9em;
+			justify-items: center;
+			display: grid;
+			gap: 6px;
+			padding: 4px;
+			text-decoration: none;
+
+			svg {
+				font-size: 32px;
+			}
+		}
+	}
+
+	.copyright {
+		justify-content: center;
+		color: hsl(from var(--text-1) h s l / 50%);
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 1ch;
+
+		span {
+			white-space: nowrap;
+		}
+	}
+
+	.farts {
+		background: hsl(from var(--accent-1) h s l / 50%);
+		-webkit-background-clip: text;
+		}
+</style>

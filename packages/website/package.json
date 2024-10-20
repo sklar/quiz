@@ -1,0 +1,25 @@
+{
+	"name": "@quiz/website",
+	"type": "module",
+	"version": "0.0.0",
+	"scripts": {
+		"astro": "astro",
+		"dev": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"lint.check": "pnpm biome check .",
+		"lint.write": "pnpm biome check --write .",
+		"type.check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"astro": "^4.16.6",
+		"astro-icon": "^1.1.2",
+		"open-props": "^1.7.7"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.4"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

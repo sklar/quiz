@@ -1,0 +1,104 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content'
+
+const tests = await getCollection('tests')
+---
+
+<h2>Comparison</h2>
+
+<ul>
+	{tests.map(({ data: { browser, connection, device, icon, location, url } }: CollectionEntry<'tests'>) => (
+		<li>
+			<a href={url}>
+				<span data-item="component[icon]">{icon}</span>
+				<span data-item="component[specs]">
+					<span><b>{device}</b> / {browser}</span>
+					<span>{connection}</span>
+					<span>{location}</span>
+				</span>
+			</a>
+		</li>
+	))}
+</ul>
+
+<style>
+	h2 {
+		color: hsl(from var(--text-1) h s l / var(--_alpha, 60%));
+		font-size: var(--font-size-5);
+		font-weight: var(--font-weight-6);
+
+		@container style(--theme: dark) {
+			--_alpha: 80%;
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		justify-content: center;
+		list-style: none;
+		margin-block: 32px;
+	}
+
+	li {
+		display: grid;
+		position: relative;
+	}
+
+	a {
+		background-color: hsl(from var(--link) h 0% 100% / var(--_alpha, 24%));
+		border: 3px solid hsl(from var(--accent-1) h s 64%);
+		border-radius: 8px;
+		box-shadow: var(--shadow-3), var(--inner-shadow-2);
+		display: grid;
+		font-size: 0.9rem;
+		line-height: 1.8;
+		padding: 16px 20px;
+		padding-block-end: 52px;
+		text-decoration: none;
+		transition-duration: 0.3s;
+		transition-property: background-color, box-shadow, outline;
+		transition-timing-function: linear, linear, var(--ease-spring-1);
+
+		@container style(--theme: dark) {
+			--_alpha: 4%;
+		}
+
+		&:is(:focus-visible, :hover) {
+			background-color: hsl(from var(--link) h s 70% / 20%);
+			box-shadow: none;
+
+			[data-item*="icon"] {
+				filter: drop-shadow(0 0 8px var(--gray-6));
+				scale: 1.25;
+			}
+		}
+	}
+
+	[data-item*="icon"] {
+		font-size: 60px;
+		justify-self: center;
+		mix-blend-mode: luminosity;
+		transition-duration: 0.2s, 0.8s;
+		transition-property: filter, scale;
+		transition-timing-function: ease-out, var(--ease-spring-5);
+	}
+
+	[data-item*="specs"] {
+		display: grid;
+
+		&::after {
+			aspect-ratio: calc(966 / 159);
+			background: url('/assets/catchpoint.svg');
+			block-size: 12px;
+			content: '';
+			display: block;
+			inset-block-end: 24px;
+			inset-inline-start: 20px;
+			opacity: 0.5;
+			position: absolute;
+		}
+	}
+
+</style>

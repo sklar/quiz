@@ -1,0 +1,66 @@
+/* open props */
+@import "open-props/gray";
+@import "open-props/stone";
+
+@import "open-props/easings";
+@import "open-props/fonts";
+@import "open-props/media";
+@import "open-props/shadows";
+
+/* open props extras */
+@import "open-props/normalize";
+
+html {
+	--link: var(--accent-1);
+	--link-visited: hsl(from var(--link) h 60% 50%);
+
+	background-color: var(--surface-2);
+	font-family: monospace;
+
+	@media (--OSlight) {
+		--theme: light;
+
+		--accent-1: DodgerBlue;
+
+		--surface-1: var(--stone-1);
+		--surface-2: var(--stone-3);
+	}
+
+	@media (--OSdark) {
+		--theme: dark;
+
+		--accent-1: DarkTurquoise;
+
+		--surface-1: var(--gray-10);
+		--surface-2: var(--gray-9);
+	}
+}
+
+body {
+	padding: 16px;
+}
+
+main {
+	margin-inline: auto;
+	max-inline-size: 800px;
+}
+
+:where(h1, h2, h3, p) {
+	margin: revert;
+	max-inline-size: unset;
+	text-align: center;
+}
+
+:not(:active):focus-visible {
+	outline-color: hsl(from var(--accent-1) h s 64%);
+	outline-offset: 3px;
+	outline-style: solid;
+	outline-width: 6px;
+	transition-duration: 0.3s;
+	transition-property: outline;
+	transition-timing-function: var(--ease-spring-1);
+}
+
+hr {
+	display: contents;
+}

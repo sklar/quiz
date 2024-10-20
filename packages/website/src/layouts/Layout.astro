@@ -1,0 +1,30 @@
+---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+
+import '../main.css'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Quiz</title>
+
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="description" content="A super simple playground to learn the basics of popular frameworks." />
+		<meta name="color-scheme" content="dark light" />
+		<meta name="generator" content={Astro.generator} />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

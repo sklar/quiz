@@ -1,0 +1,28 @@
+---
+---
+
+<header>
+	<h1>Quiz</h1>
+
+	<p class="tagline">
+		A super simple playground to learn the basics of popular frameworks.
+	</p>
+
+	<hr>
+</header>
+
+<style>
+	header {
+		padding-block-start: 3dvb;
+	}
+
+	.tagline {
+		color: hsl(from var(--text-1) h s l / var(--_alpha, 50%));
+		font-size: 1.2em;
+		text-wrap: pretty;
+
+		@container style(--theme: dark) {
+			--_alpha: 60%;
+		}
+	}
+</style>

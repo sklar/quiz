@@ -19,7 +19,9 @@ export default defineConfig({
 		},
 	},
 
-	integrations: [icon({
-		iconDir: "src/assets/icons",
-	})],
+	integrations: [
+		icon({
+			iconDir: 'src/assets/icons',
+		}),
+	],
 })

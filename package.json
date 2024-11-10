@@ -1,6 +1,6 @@
 {
 	"name": "@quiz/root",
-	"private": true,
+	"license": "UNLICENSED",
 	"version": "0.0.0",
 	"packageManager": "pnpm@9.4.0",
 	"type": "module",

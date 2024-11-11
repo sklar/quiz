@@ -4,4 +4,4 @@
 
 A super simple Preact playground to learn the basics of popular frameworks.
 
-<img src="../../resources/preact.svg" alt="Preact logo" width="80" height="80">
+<img src="../../.github/resources/preact.svg" alt="Preact logo" width="80" height="80">

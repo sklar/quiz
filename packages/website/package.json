@@ -9,7 +9,7 @@
 		"preview": "astro preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
-		"type.check": "tsc --noEmit"
+		"type.check": "astro check sync && tsc --noEmit"
 	},
 	"dependencies": {
 		"astro": "^4.16.6",

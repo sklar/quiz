@@ -4,4 +4,4 @@
 
 A super simple Angular playground to learn the basics of popular frameworks.
 
-<img src="../../resources/angular.svg" alt="Angular logo" width="80" height="80">
+<img src="../../.github/resources/angular.svg" alt="Angular logo" width="80" height="80">

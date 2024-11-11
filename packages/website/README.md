@@ -4,4 +4,4 @@
 
 A landing page serving links to all the clones and performance comparison.
 
-<img src="../../resources/astro.svg" alt="Astro logo" width="80" height="80">
+<img src="../../.github/resources/astro.svg" alt="Astro logo" width="80" height="80">

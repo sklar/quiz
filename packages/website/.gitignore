@@ -2,3 +2,6 @@
 # @see https://git-scm.com/docs/gitignore
 
 .astro
+
+# build
+dist

@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="404 Page Not Found">
+	<img src="https://i.giphy.com/media/rCAVWjzASyNlm/giphy.webp" alt="Confused?" />
+	<h1>Page Not Found</h1>
+	<p>It seems you're lost a bit.</p>
+	<p>Let's try to find your way back to the home page.</p>
+	<p>👇👇👇</p>
+	<p>
+		<a href="/">Let's go home!</a>
+	</p>
+</Layout>
+
+<style>
+	img {
+		margin-block-start: 2lh;
+		margin-inline: auto;
+	}
+
+	p {
+		&:nth-of-type(1) {
+			color: hsl(from var(--text-1) h s l / 80%);
+			font-weight: var(--font-weight-6);
+		}
+		&:nth-of-type(2) {
+			color: hsl(from var(--text-1) h s l / 50%);
+		}
+		&:last-of-type {
+			margin-block-end: 1lh;
+		}
+	}
+
+	a {
+		font-size: 1.1em;
+		font-weight: var(--font-weight-6);
+		text-transform: uppercase;
+	}
+</style>

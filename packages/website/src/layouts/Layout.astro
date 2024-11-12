@@ -3,6 +3,14 @@ import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 
 import '../main.css'
+
+interface Props {
+	title?: string
+}
+
+const { title } = Astro.props
+
+const defaultTitle = 'Quiz playground'
 ---
 
 <!doctype html>
@@ -11,7 +19,7 @@ import '../main.css'
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Quiz</title>
+		<title>{title ? [title, defaultTitle].join(' – ') : defaultTitle}</title>
 
 		<meta name="robots" content="noindex, nofollow" />
 		<meta name="description" content="A super simple playground to learn the basics of popular frameworks." />

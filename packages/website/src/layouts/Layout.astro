@@ -11,6 +11,12 @@ interface Props {
 const { title } = Astro.props
 
 const defaultTitle = 'Quiz playground'
+
+const page = {
+	title: title ? [title, defaultTitle].join(' – ') : defaultTitle,
+	description:
+		'A super simple playground to learn the basics of popular frameworks.',
+}
 ---
 
 <!doctype html>
@@ -19,12 +25,18 @@ const defaultTitle = 'Quiz playground'
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>{title ? [title, defaultTitle].join(' – ') : defaultTitle}</title>
+		<title>{page.title}</title>
 
 		<meta name="robots" content="noindex, nofollow" />
-		<meta name="description" content="A super simple playground to learn the basics of popular frameworks." />
+		<meta name="description" content={page.description} />
 		<meta name="color-scheme" content="dark light" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content={page.title}>
+		<meta property="og:url" content="https://quiz-76dd32.netlify.app/">
+		<meta property="og:image" content="https://quiz-76dd32.netlify.app/og-image.webp">
+		<meta property="og:description" content={page.description}>
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>

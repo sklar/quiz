@@ -1,5 +1,5 @@
 ---
-"@quiz/website": minor
+"@quiz/website": major
 ---
 
 Creates landing page

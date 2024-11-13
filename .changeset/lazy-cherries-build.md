@@ -1,5 +1,5 @@
 ---
-"@quiz/svelte": minor
+"@quiz/svelte": major
 ---
 
 Implements Svelte clone

@@ -1,5 +1,5 @@
 ---
-"@quiz/qwik": minor
+"@quiz/qwik": major
 ---
 
 Implements Qwik clone

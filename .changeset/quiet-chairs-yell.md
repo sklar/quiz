@@ -1,5 +1,5 @@
 ---
-"@quiz/preact": minor
+"@quiz/preact": major
 ---
 
 Implements Preact clone

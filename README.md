@@ -4,13 +4,15 @@
 
 A super simple playground to learn the basics of popular frameworks.
 
-<img src=".github/resources/angular.svg" alt="Angular logo" width="48" height="48">
-<img src=".github/resources/preact.svg" alt="Preact logo" width="48" height="48">
-<img src=".github/resources/qwik.svg" alt="Qwik logo" width="48" height="48">
-<img src=".github/resources/react.svg" alt="React logo" width="48" height="48">
-<img src=".github/resources/solid.svg" alt="Solid logo" width="48" height="48">
-<img src=".github/resources/svelte.svg" alt="Svelte logo" width="48" height="48">
-<img src=".github/resources/vue.svg" alt="Vue logo" width="48" height="48">
+<p>
+	<img src=".github/resources/angular.svg" alt="Angular logo" width="48" height="48">
+	<img src=".github/resources/preact.svg" alt="Preact logo" width="48" height="48">
+	<img src=".github/resources/qwik.svg" alt="Qwik logo" width="48" height="48">
+	<img src=".github/resources/react.svg" alt="React logo" width="48" height="48">
+	<img src=".github/resources/solid.svg" alt="Solid logo" width="48" height="48">
+	<img src=".github/resources/svelte.svg" alt="Svelte logo" width="48" height="48">
+	<img src=".github/resources/vue.svg" alt="Vue logo" width="48" height="48">
+</p>
 
 ## Performance Comparison
 

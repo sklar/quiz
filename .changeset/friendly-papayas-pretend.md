@@ -1,5 +1,5 @@
 ---
-"@quiz/solid": minor
+"@quiz/solid": major
 ---
 
 Implements Solid clone

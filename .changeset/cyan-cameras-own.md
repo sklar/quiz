@@ -1,5 +1,5 @@
 ---
-"@quiz/angular": minor
+"@quiz/angular": major
 ---
 
 Implements Angular clone

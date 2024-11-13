@@ -1,5 +1,5 @@
 ---
-"@quiz/vue": minor
+"@quiz/vue": major
 ---
 
 Implements Vue clone

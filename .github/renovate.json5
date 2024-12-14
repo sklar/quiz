@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":automergeMinor",
+    ":semanticCommitTypeAll(chore)",
+  ],
+	"baseBranches": ["next"],
+	"labels": ["dependencies"],
+	"lockFileMaintenance": {
+    "enabled": true,
+		"schedule": [
+			"* * * * 0/2"
+		]
+	},
+	"ignoreDeps": [
+		"@biomejs/biome",
+
+		// engines
+		"node",
+		"pnpm",
+
+	],
+  "postUpdateOptions": ["pnpmDedupe"],
+	"rangeStrategy": "bump",
+	"schedule": [
+		"* * * * 0/2"
+	]
+}

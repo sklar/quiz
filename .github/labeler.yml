@@ -1,0 +1,35 @@
+angular:
+- changed-files:
+  - any-glob-to-any-file: 'packages/angular/**'
+
+preact:
+- changed-files:
+  - any-glob-to-any-file: 'packages/preact/**'
+
+qwik:
+- changed-files:
+  - any-glob-to-any-file: 'packages/qwik/**'
+
+react:
+- changed-files:
+  - any-glob-to-any-file: 'packages/react/**'
+
+solid:
+- changed-files:
+  - any-glob-to-any-file: 'packages/solid/**'
+
+svelte:
+- changed-files:
+  - any-glob-to-any-file: 'packages/svelte/**'
+
+vue:
+- changed-files:
+  - any-glob-to-any-file: 'packages/vue/**'
+
+website:
+- changed-files:
+  - any-glob-to-any-file: 'packages/website/**'
+
+ci:
+- changed-files:
+  - any-glob-to-any-file: '.github/workflows/**'

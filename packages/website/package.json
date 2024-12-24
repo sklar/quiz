@@ -12,9 +12,9 @@
 		"type.check": "astro check sync && tsc --noEmit"
 	},
 	"dependencies": {
-		"astro": "^4.16.6",
-		"astro-icon": "^1.1.2",
-		"open-props": "^1.7.7"
+		"astro": "^4.16.18",
+		"astro-icon": "^1.1.4",
+		"open-props": "^1.7.9"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.4"

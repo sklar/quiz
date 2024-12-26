@@ -6,6 +6,7 @@
 		"ng": "ng",
 		"dev": "ng serve",
 		"build": "ng build",
+		"clean": "rm -rf dist && rm -rf node_modules",
 		"watch": "ng build --watch --configuration development",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",

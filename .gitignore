@@ -3,6 +3,7 @@
 
 # build
 dist
+server
 
 # ci
 .netlify
@@ -15,6 +16,10 @@ node_modules
 
 # environment variables
 .env
+
+# framework
+.angular
+.astro
 
 # logs
 *-debug.log*

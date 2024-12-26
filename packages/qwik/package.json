@@ -11,6 +11,7 @@
 		"build.types": "tsc --incremental --noEmit",
 		"dev": "vite --mode ssr",
 		"dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+		"clean": "rm -rf dist && rm -rf server && rm -rf node_modules && rm tmp/*.tsbuildinfo",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"preview": "qwik build preview && vite preview --open",

@@ -7,7 +7,6 @@ import { type Question, QuizService } from './quiz.service'
 
 @Component({
 	selector: 'app-quiz-question',
-	standalone: true,
 	imports: [CommonModule, FormsModule],
 	template: `
     <form (ngSubmit)="onSubmit()">

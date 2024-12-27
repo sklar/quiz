@@ -6,6 +6,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": false,
     "declaration": false,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "lib": ["ES2022", "DOM"],
     "importHelpers": true,

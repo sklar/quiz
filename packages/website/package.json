@@ -6,15 +6,16 @@
 		"astro": "astro",
 		"dev": "astro dev",
 		"build": "astro check && astro build",
+		"clean": "rm -rf dist && rm -rf node_modules",
 		"preview": "astro preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"type.check": "astro check sync && tsc --noEmit"
 	},
 	"dependencies": {
-		"astro": "^4.16.6",
-		"astro-icon": "^1.1.2",
-		"open-props": "^1.7.7"
+		"astro": "^5.1.1",
+		"astro-icon": "^1.1.5",
+		"open-props": "^1.7.9"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.4"

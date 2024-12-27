@@ -3,7 +3,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
 	selector: 'app-quiz-result',
-	standalone: true,
 	imports: [CommonModule],
 	template: `
     <p class="result">

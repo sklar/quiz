@@ -6,18 +6,20 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
+		"clean": "rm -rf dist && rm -rf node_modules && rm *.tsbuildinfo",
 		"preview": "vite preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.7",
+		"open-props": "^1.7.9",
 		"party-js": "^2.2.0",
-		"preact": "^10.24.2"
+		"preact": "^10.25.4"
 	},
 	"devDependencies": {
-		"@preact/preset-vite": "^2.9.1"
+		"@preact/preset-vite": "^2.9.3",
+		"vite": "^6.0.6"
 	},
 	"volta": {
 		"extends": "../../package.json"

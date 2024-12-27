@@ -22,9 +22,20 @@
 		"pnpm",
 
 	],
+
+	// angular: pin typescript
+	"packageRules": [
+    {
+      "matchPackageNames": ["typescript"],
+      "matchPaths": ["packages/angular/package.json"],
+      "matchManagers": ["npm"],
+      "enabled": false
+    }
+  ],
+
   "postUpdateOptions": ["pnpmDedupe"],
 	"rangeStrategy": "bump",
 	"schedule": [
 		"* * * * 0/2"
-	]
+	],
 }

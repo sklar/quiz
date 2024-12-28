@@ -13,7 +13,7 @@
 		"type.check": "astro check sync && tsc --noEmit"
 	},
 	"dependencies": {
-		"astro": "^4.16.18",
+		"astro": "^5.1.1",
 		"astro-icon": "^1.1.5",
 		"open-props": "^1.7.9"
 	},

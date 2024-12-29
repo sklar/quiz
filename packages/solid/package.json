@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
+		"clean": "rm -rf dist && rm -rf node_modules && rm *.tsbuildinfo",
 		"preview": "vite preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",

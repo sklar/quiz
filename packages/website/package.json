@@ -6,6 +6,7 @@
 		"astro": "astro",
 		"dev": "astro dev",
 		"build": "astro check && astro build",
+		"clean": "rm -rf dist && rm -rf node_modules",
 		"preview": "astro preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",

@@ -8,10 +8,6 @@ server
 # ci
 .netlify
 
-# framework
-.angular
-.astro
-
 # compilation
 *.tsbuildinfo
 
@@ -20,6 +16,10 @@ node_modules
 
 # environment variables
 .env
+
+# framework
+.angular
+.astro
 
 # logs
 *-debug.log*

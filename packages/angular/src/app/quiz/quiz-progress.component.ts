@@ -5,7 +5,6 @@ import type { Question } from './quiz.service'
 
 @Component({
 	selector: 'app-quiz-progress',
-	standalone: true,
 	imports: [CommonModule],
 	template: `
     <p class="result" aria-label="Correct answers of all answers">

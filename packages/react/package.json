@@ -6,21 +6,23 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
+		"clean": "rm -rf dist && rm -rf node_modules && rm *.tsbuildinfo",
 		"preview": "vite preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.7",
+		"open-props": "^1.7.9",
 		"party-js": "^2.2.0",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
-		"@types/react": "^18.3.11",
-		"@types/react-dom": "^18.3.0",
-		"@vitejs/plugin-react": "^4.3.2"
+		"@types/react": "^19.0.2",
+		"@types/react-dom": "^19.0.2",
+		"@vitejs/plugin-react": "^4.3.4",
+		"vite": "^6.0.6"
 	},
 	"volta": {
 		"extends": "../../package.json"

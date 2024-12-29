@@ -1,6 +1,10 @@
 <script lang="ts">
-export let time: number
-export let onReload: () => void
+interface Props {
+	time: number
+	onReload: () => void
+}
+
+let { time, onReload }: Props = $props()
 </script>
 
 <p class="result">
@@ -11,7 +15,7 @@ export let onReload: () => void
 		type="button"
 		class="button"
 		aria-label="Load another set of questions"
-		on:click={onReload}
+		onclick={onReload}
 	>
 		Reload
 	</button>

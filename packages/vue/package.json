@@ -6,19 +6,21 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc -b && vite build",
+		"clean": "rm -rf dist && rm -rf node_modules",
 		"preview": "vite preview",
 		"lint.check": "pnpm biome check .",
 		"lint.write": "pnpm biome check --write .",
 		"type.check": "vue-tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.7",
+		"open-props": "^1.7.9",
 		"party-js": "^2.2.0",
-		"vue": "^3.5.12"
+		"vue": "^3.5.13"
 	},
 	"devDependencies": {
-		"@vitejs/plugin-vue": "^5.1.4",
-		"vue-tsc": "^2.1.6"
+		"@vitejs/plugin-vue": "^5.2.1",
+		"vite": "^6.0.6",
+		"vue-tsc": "^2.2.0"
 	},
 	"volta": {
 		"extends": "../../package.json"

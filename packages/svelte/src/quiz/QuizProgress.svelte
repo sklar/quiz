@@ -1,7 +1,11 @@
 <script lang="ts">
 import type { Question } from './quiz.controller'
 
-export let questions: Question[]
+interface Props {
+	questions: Question[]
+}
+
+let { questions }: Props = $props()
 </script>
 
 <p class="result" aria-label="Correct answers of all answers">

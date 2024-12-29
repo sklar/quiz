@@ -7,8 +7,8 @@ import QuizQuestion from './QuizQuestion.svelte'
 import QuizResult from './QuizResult.svelte'
 import { quizStore } from './quiz.controller'
 
-let confettiRef: HTMLDivElement
-let celebrationGif = ''
+let confettiRef = $state<HTMLDivElement>()
+let celebrationGif = $state('')
 
 const celebrationGifs = [
 	'https://media.giphy.com/media/g9582DNuQppxC/giphy.gif',
@@ -34,17 +34,21 @@ onMount(() => {
 	quizStore.generateNewSet()
 })
 
-$: if ($quizStore.isSetComplete) {
-	celebrationGif =
-		celebrationGifs[Math.floor(Math.random() * celebrationGifs.length)]
-	if (confettiRef) {
-		party.confetti(confettiRef, {
-			count: party.variation.range(80, 160),
-		})
+$effect(() => {
+	if ($quizStore.isSetComplete) {
+		celebrationGif =
+			celebrationGifs[Math.floor(Math.random() * celebrationGifs.length)]
+		if (confettiRef) {
+			party.confetti(confettiRef, {
+				count: party.variation.range(80, 160),
+			})
+		}
 	}
-}
+})
 
-$: currentQuestion = $quizStore.questions[$quizStore.currentQuestionIndex]
+let currentQuestion = $derived(
+	$quizStore.questions[$quizStore.currentQuestionIndex],
+)
 </script>
 
 <section class="container">

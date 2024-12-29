@@ -2,11 +2,15 @@
 import type { Question } from './quiz.controller'
 import { calculateAnswer } from './quiz.controller'
 
-export let question: Question
-export let onAnswer: (isCorrect: boolean) => void
+interface Props {
+	question: Question
+	onAnswer: (isCorrect: boolean) => void
+}
 
-let userAnswer = ''
-let inputRef: HTMLInputElement
+let { question, onAnswer }: Props = $props()
+
+let userAnswer = $state('')
+let inputRef = $state<HTMLInputElement>()
 
 function handleSubmit(event: Event) {
 	event.preventDefault()
@@ -17,11 +21,11 @@ function handleSubmit(event: Event) {
 
 	onAnswer(isCorrect)
 	userAnswer = ''
-	inputRef.focus()
+	inputRef?.focus()
 }
 </script>
 
-<form on:submit={handleSubmit}>
+<form onsubmit={handleSubmit}>
 	<p class="question">
 		<span>{question.num1}</span>
 		<span>{question.operation}</span>

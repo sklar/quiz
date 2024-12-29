@@ -17,7 +17,6 @@ import { type Question, QuizService } from './quiz.service'
 
 @Component({
 	selector: 'app-quiz',
-	standalone: true,
 	imports: [
 		CommonModule,
 		QuizQuestionComponent,

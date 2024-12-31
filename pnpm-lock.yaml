@@ -48,8 +48,8 @@ importers:
         specifier: ^19.0.5
         version: 19.0.5(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/compiler@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(@angular/platform-browser@19.0.5(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -79,8 +79,8 @@ importers:
   packages/preact:
     dependencies:
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -101,8 +101,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0(vite@6.0.6(@types/node@22.10.2)(lightningcss@1.28.2)(sass@1.80.7)(yaml@2.6.1))
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -117,8 +117,8 @@ importers:
   packages/react:
     dependencies:
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -145,8 +145,8 @@ importers:
   packages/solid:
     dependencies:
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -164,8 +164,8 @@ importers:
   packages/svelte:
     dependencies:
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -189,8 +189,8 @@ importers:
   packages/vue:
     dependencies:
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
       party-js:
         specifier: ^2.2.0
         version: 2.2.0
@@ -217,8 +217,8 @@ importers:
         specifier: ^1.1.5
         version: 1.1.5
       open-props:
-        specifier: ^1.7.9
-        version: 1.7.9
+        specifier: ^1.7.10
+        version: 1.7.10
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -3648,8 +3648,8 @@ packages:
   oniguruma-to-es@0.8.1:
     resolution: {integrity: sha512-dekySTEvCxCj0IgKcA2uUCO/e4ArsqpucDPcX26w9ajx+DvMWLc5eZeJaRQkd7oC/+rwif5gnT900tA34uN9Zw==}
 
-  open-props@1.7.9:
-    resolution: {integrity: sha512-WYyrh7UaXRQjHwQTM0a3oLmmjNVE22Zi59isi5S8Pu0wcdIOK57guFnXvT37Q3iOXy2PUPfv4uKE8ib/yVC9Cg==}
+  open-props@1.7.10:
+    resolution: {integrity: sha512-zZPJlr39YbHPou7mQ9GUKz1jiYjWzyZf/0pkPZq4MrtwgZ6FSCnf7hLkvFRGq+RZZ327vGSW3HPc7QMH4FUAZg==}
 
   ora@5.4.1:
     resolution: {integrity: sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==}
@@ -8790,7 +8790,7 @@ snapshots:
       regex: 5.1.1
       regex-recursion: 5.1.1
 
-  open-props@1.7.9: {}
+  open-props@1.7.10: {}
 
   ora@5.4.1:
     dependencies:

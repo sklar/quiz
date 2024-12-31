@@ -13,7 +13,7 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.9",
+		"open-props": "^1.7.10",
 		"party-js": "^2.2.0",
 		"solid-js": "^1.9.3"
 	},

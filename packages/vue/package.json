@@ -13,7 +13,7 @@
 		"type.check": "vue-tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.9",
+		"open-props": "^1.7.10",
 		"party-js": "^2.2.0",
 		"vue": "^3.5.13"
 	},

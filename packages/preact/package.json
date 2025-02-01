@@ -13,13 +13,13 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.10",
+		"open-props": "^1.7.12",
 		"party-js": "^2.2.0",
 		"preact": "^10.25.4"
 	},
 	"devDependencies": {
-		"@preact/preset-vite": "^2.9.3",
-		"vite": "^6.0.7"
+		"@preact/preset-vite": "^2.10.0",
+		"vite": "^6.0.11"
 	},
 	"volta": {
 		"extends": "../../package.json"

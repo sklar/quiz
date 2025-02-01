@@ -13,12 +13,12 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.10",
+		"open-props": "^1.7.12",
 		"party-js": "^2.2.0",
-		"solid-js": "^1.9.3"
+		"solid-js": "^1.9.4"
 	},
 	"devDependencies": {
-		"vite": "^6.0.7",
+		"vite": "^6.0.11",
 		"vite-plugin-solid": "^2.11.0"
 	},
 	"volta": {

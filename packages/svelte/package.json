@@ -14,15 +14,15 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.10",
+		"open-props": "^1.7.12",
 		"party-js": "^2.2.0"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@tsconfig/svelte": "^5.0.4",
-		"svelte": "^5.16.1",
-		"svelte-check": "^4.1.1",
-		"vite": "^6.0.7"
+		"svelte": "^5.19.6",
+		"svelte-check": "^4.1.4",
+		"vite": "^6.0.11"
 	},
 	"volta": {
 		"extends": "../../package.json"

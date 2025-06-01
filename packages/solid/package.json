@@ -15,10 +15,10 @@
 	"dependencies": {
 		"open-props": "^1.7.15",
 		"party-js": "^2.2.0",
-		"solid-js": "^1.9.6"
+		"solid-js": "^1.9.7"
 	},
 	"devDependencies": {
-		"vite": "^6.3.4",
+		"vite": "^6.3.5",
 		"vite-plugin-solid": "^2.11.6"
 	},
 	"volta": {

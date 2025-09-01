@@ -1,7 +1,7 @@
 {
 	"name": "@quiz/angular",
 	"private": true,
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"scripts": {
 		"ng": "ng",
 		"dev": "ng serve",

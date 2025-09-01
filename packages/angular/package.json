@@ -13,23 +13,22 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@angular/common": "^19.0.5",
-		"@angular/compiler": "^19.0.5",
-		"@angular/core": "^19.0.5",
-		"@angular/forms": "^19.0.5",
-		"@angular/platform-browser": "^19.0.5",
-		"@angular/platform-browser-dynamic": "^19.0.5",
-		"open-props": "^1.7.9",
+		"@angular/common": "^20.2.3",
+		"@angular/compiler": "^20.2.3",
+		"@angular/core": "^20.2.3",
+		"@angular/forms": "^20.2.3",
+		"@angular/platform-browser": "^20.2.3",
+		"@angular/platform-browser-dynamic": "^20.2.3",
+		"open-props": "^1.7.15",
 		"party-js": "^2.2.0",
-		"rxjs": "~7.8.1",
+		"rxjs": "~7.8.2",
 		"tslib": "^2.8.1",
-		"zone.js": "~0.15.0"
+		"zone.js": "~0.15.1"
 	},
 	"devDependencies": {
-		"@angular/build": "^19.0.6",
-		"@angular/cli": "^19.0.6",
-		"@angular/compiler-cli": "^19.0.5",
-		"typescript": "5.6.3"
+		"@angular/build": "^20.2.1",
+		"@angular/cli": "^20.2.1",
+		"@angular/compiler-cli": "^20.2.3"
 	},
 	"volta": {
 		"extends": "../../package.json"

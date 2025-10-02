@@ -13,9 +13,9 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.15",
+		"open-props": "^1.7.16",
 		"party-js": "^2.2.0",
-		"preact": "^10.26.9"
+		"preact": "^10.27.2"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.10.2",

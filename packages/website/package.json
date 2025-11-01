@@ -13,12 +13,12 @@
 		"type.check": "astro check sync && tsc --noEmit"
 	},
 	"dependencies": {
-		"astro": "^5.14.1",
+		"astro": "^5.15.3",
 		"astro-icon": "^1.1.5",
 		"open-props": "^1.7.16"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.4"
+		"@astrojs/check": "^0.9.5"
 	},
 	"volta": {
 		"extends": "../../package.json"

@@ -13,9 +13,9 @@
 		"type.check": "vue-tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.16",
+		"open-props": "^1.7.23",
 		"party-js": "^2.2.0",
-		"vue": "^3.5.25"
+		"vue": "^3.5.27"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.2.4",

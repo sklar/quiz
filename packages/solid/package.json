@@ -13,9 +13,9 @@
 		"type.check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"open-props": "^1.7.16",
+		"open-props": "^1.7.23",
 		"party-js": "^2.2.0",
-		"solid-js": "^1.9.10"
+		"solid-js": "^1.9.11"
 	},
 	"devDependencies": {
 		"vite": "^6.3.5",

@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.10.5",
-		"vite": "^6.3.5"
+		"vite": "^7.0.0"
 	},
 	"volta": {
 		"extends": "../../package.json"

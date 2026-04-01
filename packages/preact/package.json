@@ -15,10 +15,10 @@
 	"dependencies": {
 		"open-props": "^1.7.23",
 		"party-js": "^2.2.0",
-		"preact": "^10.28.4"
+		"preact": "^10.29.0"
 	},
 	"devDependencies": {
-		"@preact/preset-vite": "^2.10.3",
+		"@preact/preset-vite": "^2.10.5",
 		"vite": "^6.3.5"
 	},
 	"volta": {

@@ -15,7 +15,7 @@
 	"dependencies": {
 		"open-props": "^1.7.23",
 		"party-js": "^2.2.0",
-		"vue": "^3.5.29"
+		"vue": "^3.5.31"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.2.4",

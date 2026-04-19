@@ -1,41 +1,34 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "group:allNonMajor",
-    ":automergeMinor",
-    ":semanticCommitTypeAll(chore)",
-  ],
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended",
+		"group:allNonMajor",
+		":automergeMinor",
+		":semanticCommitTypeAll(chore)",
+	],
 	"baseBranches": ["next"],
+	"schedule": [
+		"* * 1 */3 *", // quarterly: 1st of every 3rd month
+	],
+	"rangeStrategy": "pin",
+	"postUpdateOptions": ["pnpmDedupe"],
 	"labels": ["dependencies"],
-	"lockFileMaintenance": {
-    "enabled": true,
-		"schedule": [
-			"* 0-5 10 * *"
-		]
-	},
+
 	"ignoreDeps": [
 		"@biomejs/biome",
 
 		// engines
 		"node",
 		"pnpm",
-
 	],
 
-	// angular: pin typescript
 	"packageRules": [
-    {
-      "matchPackageNames": ["typescript"],
-      "matchPaths": ["packages/angular/package.json"],
-      "matchManagers": ["npm"],
-      "enabled": false
-    }
-  ],
-
-  "postUpdateOptions": ["pnpmDedupe"],
-	"rangeStrategy": "bump",
-	"schedule": [
-		"* 0-5 1 * *"
+		// angular: pin typescript
+		{
+			"matchPackageNames": ["typescript"],
+			"matchPaths": ["packages/angular/package.json"],
+			"matchManagers": ["npm"],
+			"enabled": false,
+		},
 	],
 }

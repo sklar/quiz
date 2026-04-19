@@ -1,12 +1,13 @@
-import { defineCollection, z } from 'astro:content'
+import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
+import { z } from 'astro/zod'
 
 const frameworks = defineCollection({
 	loader: glob({ pattern: '**/*.yaml', base: './src/content/frameworks' }),
 	schema: z.object({
 		name: z.string(),
 		version: z.string(),
-		url: z.string().url(),
+		url: z.url(),
 		offset: z.string(),
 	}),
 })
@@ -19,7 +20,7 @@ const tests = defineCollection({
 		device: z.string(),
 		browser: z.string(),
 		connection: z.string(),
-		url: z.string().url(),
+		url: z.url(),
 	}),
 })
 

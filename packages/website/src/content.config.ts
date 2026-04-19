@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content'
+import { glob } from 'astro/loaders'
 
 const frameworks = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.yaml', base: './src/content/frameworks' }),
 	schema: z.object({
 		name: z.string(),
 		version: z.string(),
@@ -11,7 +12,7 @@ const frameworks = defineCollection({
 })
 
 const tests = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.yaml', base: './src/content/tests' }),
 	schema: z.object({
 		icon: z.string(),
 		location: z.string(),

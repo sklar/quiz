@@ -1,0 +1,10 @@
+# Development Workflow
+
+- Pin exact versions when adding dependencies or devDependencies (no `^` or `~` ranges).
+- Verify changes with `pnpm type.check` and `pnpm lint.write` — both should produce 0 errors.
+
+## Changesets
+
+- Run `pnpm changeset` when making notable changes to create a changeset file.
+- Changeset file gets committed with the PR.
+- On merge to `main`, the release workflow auto-generates changelog + GitHub Release.

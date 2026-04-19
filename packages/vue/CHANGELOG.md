@@ -1,5 +1,15 @@
 # @quiz/vue
 
+## 1.0.3
+
+### Patch Changes
+
+- [#132](https://github.com/sklar/quiz/pull/132) [`c63b9b3`](https://github.com/sklar/quiz/commit/c63b9b38f66eda08d34b2efb387583af5847988b) Thanks [@sklar](https://github.com/sklar)! - Updates Open Props to 1.7.23
+
+- [#132](https://github.com/sklar/quiz/pull/132) [`c63b9b3`](https://github.com/sklar/quiz/commit/c63b9b38f66eda08d34b2efb387583af5847988b) Thanks [@sklar](https://github.com/sklar)! - Updates Vite to 7.3.1 [security] [CVE-2025-58752](https://redirect.github.com/vitejs/vite/security/advisories/GHSA-jqfw-vq24-v9c3)
+
+- [#132](https://github.com/sklar/quiz/pull/132) [`c63b9b3`](https://github.com/sklar/quiz/commit/c63b9b38f66eda08d34b2efb387583af5847988b) Thanks [@sklar](https://github.com/sklar)! - Updates Vue to 3.5.31
+
 ## 1.0.2
 
 ### Patch Changes

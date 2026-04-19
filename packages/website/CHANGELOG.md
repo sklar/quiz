@@ -1,5 +1,13 @@
 # @quiz/website
 
+## 1.0.3
+
+### Patch Changes
+
+- [#132](https://github.com/sklar/quiz/pull/132) [`c63b9b3`](https://github.com/sklar/quiz/commit/c63b9b38f66eda08d34b2efb387583af5847988b) Thanks [@sklar](https://github.com/sklar)! - Updates Open Props to 1.7.23
+
+- [#132](https://github.com/sklar/quiz/pull/132) [`c63b9b3`](https://github.com/sklar/quiz/commit/c63b9b38f66eda08d34b2efb387583af5847988b) Thanks [@sklar](https://github.com/sklar)! - Updates Astro to 6.1.8
+
 ## 1.0.2
 
 ### Patch Changes

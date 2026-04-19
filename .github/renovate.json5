@@ -6,7 +6,7 @@
 		":automergeMinor",
 		":semanticCommitTypeAll(chore)",
 	],
-	"baseBranches": ["next"],
+	"baseBranchPatterns": ["next"],
 	"schedule": [
 		"* * 1 */3 *", // quarterly: 1st of every 3rd month
 	],
@@ -26,7 +26,7 @@
 		// angular: pin typescript
 		{
 			"matchPackageNames": ["typescript"],
-			"matchPaths": ["packages/angular/package.json"],
+			"matchFileNames": ["packages/angular/package.json"],
 			"matchManagers": ["npm"],
 			"enabled": false,
 		},

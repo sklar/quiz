@@ -15,11 +15,11 @@
 	"dependencies": {
 		"open-props": "1.7.23",
 		"party-js": "2.2.0",
-		"solid-js": "1.9.12"
+		"solid-js": "1.9.14"
 	},
 	"devDependencies": {
-		"vite": "7.3.5",
-		"vite-plugin-solid": "2.11.11"
+		"vite": "7.3.6",
+		"vite-plugin-solid": "2.11.12"
 	},
 	"volta": {
 		"extends": "../../package.json"
